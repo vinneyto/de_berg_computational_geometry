@@ -1,5 +1,5 @@
-from tasks.task_06_bentley_ottmann.exercise import find_intersections
 from de_berg_geometry.model import Point, Segment
+from tasks.task_06_bentley_ottmann.exercise import find_intersections
 
 
 def test_sweep_finds_chain_of_revealed_intersections() -> None:

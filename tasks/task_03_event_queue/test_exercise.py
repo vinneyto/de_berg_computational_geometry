@@ -1,5 +1,5 @@
-from tasks.task_03_event_queue.exercise import EventKind, EventQueue
 from de_berg_geometry.model import Point
+from tasks.task_03_event_queue.exercise import EventKind, EventQueue
 
 
 def test_events_are_processed_top_to_bottom_then_left_to_right() -> None:

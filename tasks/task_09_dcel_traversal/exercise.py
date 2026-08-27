@@ -1,5 +1,5 @@
-from tasks.task_08_dcel_records.exercise import Face, HalfEdge, Vertex, make_edge
 from de_berg_geometry.model import Point
+from tasks.task_08_dcel_records.exercise import Face, HalfEdge, Vertex, make_edge
 
 
 def make_polygon(points: list[Point]) -> tuple[list[Vertex], Face, Face]:

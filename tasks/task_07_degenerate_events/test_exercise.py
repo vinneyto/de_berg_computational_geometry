@@ -1,5 +1,5 @@
-from tasks.task_07_degenerate_events.exercise import classify_event
 from de_berg_geometry.model import Point, Segment
+from tasks.task_07_degenerate_events.exercise import classify_event
 
 
 def test_common_point_is_partitioned_into_u_l_c() -> None:

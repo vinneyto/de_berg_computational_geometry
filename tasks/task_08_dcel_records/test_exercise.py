@@ -1,5 +1,5 @@
-from tasks.task_08_dcel_records.exercise import Vertex, make_edge
 from de_berg_geometry.model import Point
+from tasks.task_08_dcel_records.exercise import Vertex, make_edge
 
 
 def test_edge_is_two_opposite_half_edges() -> None:

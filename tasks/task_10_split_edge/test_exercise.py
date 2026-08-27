@@ -1,6 +1,6 @@
+from de_berg_geometry.model import Point
 from tasks.task_09_dcel_traversal.exercise import make_polygon, walk_boundary
 from tasks.task_10_split_edge.exercise import split_edge
-from de_berg_geometry.model import Point
 
 
 def test_split_preserves_both_face_cycles_and_twins() -> None:

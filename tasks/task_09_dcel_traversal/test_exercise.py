@@ -1,10 +1,10 @@
+from de_berg_geometry.model import Point
 from tasks.task_09_dcel_traversal.exercise import (
     boundary_points,
     make_polygon,
     outgoing_edges,
     walk_boundary,
 )
-from de_berg_geometry.model import Point
 
 
 def test_walk_boundary_returns_one_closed_cycle() -> None:

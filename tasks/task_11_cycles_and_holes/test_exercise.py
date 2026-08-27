@@ -1,5 +1,5 @@
-from tasks.task_11_cycles_and_holes.exercise import group_cycles, signed_area
 from de_berg_geometry.model import Point
+from tasks.task_11_cycles_and_holes.exercise import group_cycles, signed_area
 
 
 def test_signed_area_encodes_orientation() -> None:

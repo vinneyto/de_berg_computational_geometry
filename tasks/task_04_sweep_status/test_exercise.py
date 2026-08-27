@@ -1,7 +1,7 @@
 import pytest
 
-from tasks.task_04_sweep_status.exercise import SweepStatus, x_at
 from de_berg_geometry.model import Point, Segment
+from tasks.task_04_sweep_status.exercise import SweepStatus, x_at
 
 
 def test_x_at_interpolates_segment() -> None:

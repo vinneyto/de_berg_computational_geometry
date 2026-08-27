@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
-from tasks.task_08_dcel_records.exercise import HalfEdge, Vertex
 from de_berg_geometry.model import Point
+from tasks.task_08_dcel_records.exercise import HalfEdge, Vertex
 
 
 @dataclass(frozen=True)

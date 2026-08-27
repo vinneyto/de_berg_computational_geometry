@@ -1,5 +1,5 @@
-from tasks.task_01_predicates.exercise import orientation, point_on_segment
 from de_berg_geometry.model import Point
+from tasks.task_01_predicates.exercise import orientation, point_on_segment
 
 
 def test_orientation_distinguishes_left_right_and_collinear() -> None:

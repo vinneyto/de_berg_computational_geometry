@@ -18,6 +18,7 @@ dev = [
 [tool.pytest.ini_options]
 addopts = "-ra --import-mode=importlib"
 testpaths = ["tasks", "tests"]
+pythonpath = ["."]
 
 [tool.ruff]
 line-length = 100

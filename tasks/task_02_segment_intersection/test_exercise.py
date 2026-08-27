@@ -1,8 +1,8 @@
+from de_berg_geometry.model import Point, Segment
 from tasks.task_02_segment_intersection.exercise import (
     IntersectionKind,
     segment_intersection,
 )
-from de_berg_geometry.model import Point, Segment
 
 
 def segment(a: tuple[float, float], b: tuple[float, float]) -> Segment:
