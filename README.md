@@ -33,7 +33,8 @@ uv run pytest tests/task_01_predicates_test.py
 2. Откройте соответствующий модуль в `src/de_berg_geometry/exercises/`.
 3. Запустите только тест этого урока.
 4. Реализуйте отмеченные функции, пока тест не станет зелёным.
-5. Запустите все уже пройденные тесты: `uv run pytest tests/task_0[1-N]*_test.py`.
+5. Запустите все уже пройденные тесты, например первые четыре:
+   `uv run pytest tests/task_{01..04}_*_test.py`.
 
 Полная карта курса находится в [COURSE.md](COURSE.md).
 
