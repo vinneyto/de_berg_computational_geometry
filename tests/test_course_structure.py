@@ -2,13 +2,21 @@ from importlib import import_module
 from pathlib import Path
 
 
-def test_all_lessons_have_an_exercise_and_a_test() -> None:
+def test_every_task_is_self_contained_and_documents_its_test_command() -> None:
     root = Path(__file__).parents[1]
-    lessons = sorted((root / "lessons").glob("[0-9][0-9]_*.md"))
+    tasks = sorted((root / "tasks").glob("task_[0-9][0-9]_*"))
 
-    assert len(lessons) == 13
+    assert len(tasks) == 13
 
-    for lesson in lessons:
-        task = lesson.stem
-        import_module(f"de_berg_geometry.exercises.task_{task}")
-        assert (root / "tests" / f"task_{task}_test.py").is_file()
+    for task in tasks:
+        readme = task / "README.md"
+        exercise = task / "exercise.py"
+        test = task / "test_exercise.py"
+
+        assert readme.is_file()
+        assert exercise.is_file()
+        assert test.is_file()
+        import_module(f"tasks.{task.name}.exercise")
+
+        expected_command = f"uv run pytest tasks/{task.name}/test_exercise.py"
+        assert expected_command in readme.read_text()

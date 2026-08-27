@@ -1,0 +1,25 @@
+# 13. Boolean operations как фильтрация
+
+После overlay сложная геометрическая работа закончена. У каждой ячейки есть признаки
+`inside_a` и `inside_b`, поэтому операции становятся булевой таблицей:
+
+- intersection: `A and B`;
+- union: `A or B`;
+- difference `A - B`: `A and not B`;
+- symmetric difference: `A xor B`.
+
+## Задание
+
+Реализуйте выбор ячеек по операции и объедините выбранные полигоны с `unary_union`.
+Сравните результат с прямыми операциями Shapely — библиотека здесь служит оракулом.
+
+## Финальный вопрос
+
+Почему Boolean operation занимает несколько строк только после того, как мы построили
+overlay, разрезали рёбра, восстановили faces и назначили им метки?
+
+## Запуск теста
+
+```bash
+uv run pytest tasks/task_13_boolean_operations/test_exercise.py
+```

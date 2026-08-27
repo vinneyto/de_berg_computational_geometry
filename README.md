@@ -21,7 +21,7 @@
 ```bash
 uv sync
 uv run pytest tests/test_course_structure.py
-uv run pytest tests/task_01_predicates_test.py
+uv run pytest tasks/task_01_predicates/test_exercise.py
 ```
 
 Первый инфраструктурный тест должен проходить сразу. Тест упражнения должен сначала упасть с
@@ -29,12 +29,12 @@ uv run pytest tests/task_01_predicates_test.py
 
 Рабочий цикл для каждого урока:
 
-1. Прочитайте одну страницу в `lessons/`.
-2. Откройте соответствующий модуль в `src/de_berg_geometry/exercises/`.
+1. Откройте `README.md` нужного задания в `tasks/`.
+2. Рядом откройте `exercise.py` и `test_exercise.py`.
 3. Запустите только тест этого урока.
 4. Реализуйте отмеченные функции, пока тест не станет зелёным.
 5. Запустите все уже пройденные тесты, например первые четыре:
-   `uv run pytest tests/task_{01..04}_*_test.py`.
+   `uv run pytest tasks/task_{01..04}_*/test_exercise.py`.
 
 Полная карта курса находится в [COURSE.md](COURSE.md).
 
