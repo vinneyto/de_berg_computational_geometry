@@ -30,7 +30,7 @@ uv run pytest tasks/task_01_predicates/test_exercise.py
 Рабочий цикл для каждого урока:
 
 1. Откройте `README.md` нужного задания в `tasks/`.
-2. Рядом откройте `exercise.py` и `test_exercise.py`.
+2. Рядом откройте `exercise.py` и `test_exercise.py`. Если застряли, используйте `HINT.md`.
 3. Запустите только тест этого урока.
 4. Реализуйте отмеченные функции, пока тест не станет зелёным.
 5. Запустите все уже пройденные тесты, например первые четыре:
@@ -53,3 +53,14 @@ uv run ruff check .
 ```
 
 Полный `uv run pytest` станет зелёным после прохождения всех заданий.
+
+## Сокращения
+
+- **DCEL** — *doubly-connected edge list*, двусвязный список рёбер.
+- **CCW** — *counterclockwise*, направление против часовой стрелки.
+- **CW** — *clockwise*, направление по часовой стрелке.
+- **BST** — *binary search tree*, двоичное дерево поиска.
+- **AABB** — *axis-aligned bounding box*, ограничивающий прямоугольник по осям.
+- **U(p), L(p), C(p)** — upper endpoints, lower endpoints и containing segments:
+  верхние концы, нижние концы и сегменты, содержащие точку во внутренности.
+- **XOR** — *exclusive OR*, исключающее «или».

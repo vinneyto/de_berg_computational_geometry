@@ -10,10 +10,12 @@ def test_every_task_is_self_contained_and_documents_its_test_command() -> None:
 
     for task in tasks:
         readme = task / "README.md"
+        hint = task / "HINT.md"
         exercise = task / "exercise.py"
         test = task / "test_exercise.py"
 
         assert readme.is_file()
+        assert hint.is_file()
         assert exercise.is_file()
         assert test.is_file()
         import_module(f"tasks.{task.name}.exercise")
